@@ -1,0 +1,12 @@
+  {% for quote in quotes %}
+    <div class="edit-existing-container" qid="{{quote[2]}}">
+      <div class="edit-existing-quote">{{quote[0]}}</div>
+      <div class="edit-existing-attr">{{quote[1]}}</div>
+      <div class="edit-quote-buttons">
+        <img class="button" id="edit-quote-delete" src="{{ url_for('static', filename='img/trash.svg')}}"></img>
+        <!--<img class="button" id="edit-quote-edit" src="{{ url_for('static', filename='img/pen.svg')}}"></img>-->
+      </div>
+    </div>
+  {% else %}
+    You don't have any quotes! Get started by entering a quote above!
+  {% endfor %}

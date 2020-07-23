@@ -1,0 +1,29 @@
+<div id="edit-window">
+<div id="edit-window-header">
+  <img id="edit-window-button-close" width="10px" src="{{ url_for('static', filename='img/times.svg') }}"></img>
+</div>
+<div id="edit-window-main">
+  <div id="edit-window-new-container">
+    <form>
+      <input type="text" id="submit-quote" value="New quotation..."></input>
+      <input type="text" id="submit-attr" value="Attributed"></input>
+      <div id="edit-submit-button">Submit</div>
+    </form>
+  </div>
+  <hr>
+  <div id="edit-window-edit-container">
+    {% for quote in quotes %}
+      <div class="edit-existing-container" qid="{{quote[2]}}">
+        <div class="edit-existing-quote">{{quote[0]}}</div>
+        <div class="edit-existing-attr">{{quote[1]}}</div>
+        <div class="edit-quote-buttons">
+          <img class="edit-quote-button" id="edit-quote-delete" src="{{ url_for('static', filename='img/trash.svg')}}"></img>
+          <img class="edit-quote-button" id="edit-quote-edit" src="{{ url_for('static', filename='img/pen.svg')}}"></img>
+        </div>
+      </div>
+    {% else %}
+      No quotes detected.
+    {% endfor %}
+  </div>
+</div>
+</div>

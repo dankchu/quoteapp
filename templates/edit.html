@@ -1,0 +1,18 @@
+<div id="edit-window">
+<div id="edit-window-header">
+  <img class="button" id="edit-window-button-close" width="10px" src="{{ url_for('static', filename='img/times.svg') }}"></img>
+</div>
+<div id="edit-window-main">
+  <div id="edit-window-new-container">
+    <form>
+      <input type="text" id="submit-quote" value="New quotation..."></input>
+      <input type="text" id="submit-attr" value="Attributed"></input>
+      <div class="button" id="edit-submit-button">Submit</div>
+    </form>
+  </div>
+  <hr>
+  <div id="edit-window-edit-container">
+  {% include 'edit-window-edit-container.html'%}
+  </div>
+</div>
+</div>

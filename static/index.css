@@ -1,0 +1,34 @@
+#main-banner{
+  margin: auto;
+  font-family: "Arial";
+  text-align: center;
+  font-size: 30px;
+  padding: 100px 0;
+  width: 50%;
+  color: white;
+}
+
+#login-button{
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+  border-width: thin;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  width: 5%;
+  padding: 5px;
+}
+
+#login-a{
+  font-family: "Arial";
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+body{
+  background-color:  #0099cc;
+}

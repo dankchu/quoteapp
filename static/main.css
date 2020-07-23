@@ -1,0 +1,142 @@
+#main-container{
+  margin: auto;
+  padding: 100px 0;
+  width: 50%;
+}
+
+#quote-container{
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 30px;
+  color: white;
+}
+
+#source-container{
+  text-align: right;
+  padding: 20px;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+
+#edit-button{
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+  border-width: thin;
+  background-color: white;
+  color: black;
+  width: 25px;
+  float: right;
+}
+
+#edit-submit-button{
+  border-style: solid;
+  border-color: grey;
+  border-radius: 2px;
+  border-width: thin;
+  font-family: "Arial";
+  background-color: white;
+  color: black;
+  width: 35px;
+  float: right;
+}
+
+.button{
+  cursor: pointer;
+  font-family: "Arial";
+  padding: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+#edit-window-header{
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+#edit-window-new-container{
+  padding-bottom: 5px;
+}
+
+#edit-window-edit-container{
+  padding-top: 5px;
+}
+
+#edit-window-main{
+  overflow: auto;
+}
+
+
+#edit-window-button-close{
+  float: right;
+  overflow: auto;
+}
+
+#edit-quote-delete,#edit-quote-edit{
+  float: right;
+  overflow: auto;
+  width: 15px;
+  padding-left: 10px;
+}
+
+
+.edit-existing-container{
+  padding: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.edit-existing-quote{
+  width: 70%;
+}
+.edit-existing-attr{
+  width: 20%;
+}
+
+
+.edit-existing-quote, .edit-existing-attr, #edit-quote-delete{
+  float: left;
+  overflow: auto;
+}
+
+#edit-window{
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -375px;
+  width: 750px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2px;
+  border-width: thin;
+  padding: 15px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  z-index: 10;
+}
+
+#submit-quote{
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+#submit-attr{
+  border: none;
+  border-bottom: 1px solid black;
+  width: 20%;
+}
+
+input[type=text]:focus {
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+
+body{
+  background-color:  #3273a8;
+}
