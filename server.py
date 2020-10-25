@@ -10,7 +10,7 @@ import config
 
 app = Flask(__name__)
 #app.config.from_pyfile('config.py')
-app.config.from_object(config.Dev())
+app.config.from_object(config.Test())
 
 
 
